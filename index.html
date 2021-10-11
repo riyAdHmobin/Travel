@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style_index.css">
+
+    <title>Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="files/video/Palm_Tree.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring</h3>
+
+            <p>Travelling removes our monotony and gives pleasure. Similarly, it also broadens our outlook and refreshes our mind. A good traveler can easily educate others. He can give us first-hand knowledge of men and matters of other country.</p>
+
+            <a href="#">Explore</a>
+
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/riyAdH.mobin"><img src="files/icon/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/riyadh_mobin/"><img src="files/icon/instagram.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/channel/UCo8Ju7QJZa7GW5_KPNRJ2kg"><img src="files/icon/youtube.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="https://www.facebook.com/riyAdH.mobin">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle=document.querySelector('.toggle')
+        const showcaseToggle=document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',()=>{
+            menuToggle.classList.toggle('active')
+            showcaseToggle.classList.toggle('active')
+        })
+    </script>
+
+</body>
+<footer>All Right Reserved To RiyadhMobin</footer>
+</html>
